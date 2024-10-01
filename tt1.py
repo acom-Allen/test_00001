@@ -15,7 +15,7 @@ driver_options.add_argument('--disable-gpu')
 
 # Open Webdriver
 driver = webdriver.Chrome(options=driver_options)
-driver.get('https://192.168.0.14/')    # This is ACOM HP-Printer Website IP
+driver.get('https://example.com/')    # This is ACOM HP-Printer Website IP
 
 time.sleep(1)
 
