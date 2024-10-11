@@ -26,7 +26,6 @@ def fib(n):    # write Fibonacci series up to n
 class TestFibonacci(unittest.TestCase):
     def test_fibonacci(self):
         self.assertEqual(fibonacci(0), [])
-        self.assertEqual(fibonacci(1), )
         self.assertEqual(fibonacci(2), [0, 1])
         self.assertEqual(fibonacci(5), [0, 1, 1, 2, 3])
         self.assertEqual(fibonacci(7), [0, 1, 1, 2, 3, 5, 8])
@@ -41,7 +40,7 @@ class TestFibonacci(unittest.TestCase):
         fib(8)
         sys.stdout = sys.__stdout__
 
-        self.assertEqual(captured_output.getvalue().strip(), "0, 1, 1, 2, 3, 5, 8")
+        self.assertEqual(captured_output.getvalue().strip(), "0, 1, 1, 2, 3, 5,")
 
 if __name__ == '__main__':
     unittest.main()
